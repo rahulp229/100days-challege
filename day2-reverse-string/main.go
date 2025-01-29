@@ -31,5 +31,12 @@ func main() {
 	s3 := append(s2, 9, 10)
 	fmt.Println(s3)
 	fmt.Println("length of s3 | capacity of s3", len(s3), cap(s3))
+	generateRandomNumber(1, 6)
 	
+}
+func generateRandomNumber(min, max int) int {
+	seed := time.Now().UnixNano() / 123456789
+	rand.New(rand.NewSource(int64(seed)))
+	fmt.Println("random string - ", rand.Intn(max-min)+min)
+	return rand.Intn(max-min) + min
 }

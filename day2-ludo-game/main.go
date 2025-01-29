@@ -39,33 +39,42 @@ func main() {
 	//oppent home postion yellow - 13th position
 	//oppent home postion green - 26th position
 	//oppent home postion red - 39th position
-	rules := []string{"if all players reach final postion then that team is won",
-		"if all players of any team not reach to final position then that team is lost"}
 
-	fmt.Println(rules)
+	// rules := []string{"if all players reach final postion then that team is won",
+	// 	"if all players of any team not reach to final position then that team is lost"}
+
+	//fmt.Println(rules)
 	game := make(map[string]bool)
-	for key, v := range Teams {
-		//playing the game
-		fmt.Println(key, "Team", v)
-		//gostacticcheck
-		if _, ok := game[key]; !ok {
-			fmt.Println(key, "Team", v)
-			game[key] = true
-		}
-		//gostacticcheck
-		if checkPost["final"] == 56 {
-			fmt.Println("....")
-			time.Sleep(2 * time.Second)
-			fmt.Println("Game is over")
+	winingPosition := make(map[string]int)
+	for i := 0; i < 100; i++ {
+		for key, _ := range Teams {
 
-			break
-		}
-		if game[key] == true {
-			fmt.Println(key, "Team", v)
-			game[key] = false
+			//playing the game
+			//fmt.Println(key, "Team", v)
+			//gostacticcheck
+			if _, ok := game[key]; !ok {
+				//fmt.Println(key, "Team", v)
+				game[key] = true
+			}
+
+			
+			//gostacticcheck
+			if checkPost["1st"] == checkPost["final"] && checkPost["2nd"] == checkPost["final"] && checkPost["3rd"] == checkPost["final"] && checkPost["4th"] == checkPost["final"] {
+				fmt.Println("....")
+				time.Sleep(2 * time.Second)
+				wp := winingPosition[key] + 1
+				winingPosition[key] = wp
+				fmt.Printf("Game is over %v is won\n", key)
+
+				//os.Exit(1)
+			}
+
+			if game[key] == true {
+				//fmt.Println(key, "Team", v)
+				game[key] = false
+			}
 		}
 	}
-
 }
 
 func generateRandomNumber(min, max int) int {
