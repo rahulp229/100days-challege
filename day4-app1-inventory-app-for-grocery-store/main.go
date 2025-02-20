@@ -32,12 +32,6 @@ var operations = []string{
 	"Stop",
 }
 
-type Order struct {
-	OrderID              int
-	Items                []Item
-	CustomerMobileNumber string
-}
-
 type Invoice struct {
 	OrderID              int
 	Items                []Item
@@ -59,12 +53,17 @@ type Item struct {
 	Price float64
 }
 
-type OrderPlaced struct {
-	ID    int
-	Name  string
-	Price float64
+type Order struct {
+	ID       int
+	Name     string
+	Price    float64
+	Quantity int
 }
 
+func OrderPlaced() *Order {
+
+	return nil
+}
 func main() {
 	printWelcomeMessage()
 	printOperations()
@@ -87,7 +86,7 @@ func main() {
 		case 5:
 			//GetAllItems()
 		case 6:
-			//Placeorder()
+			//OrderPlaced()
 		case 7:
 			//GetAllOrders()
 		case 8:
