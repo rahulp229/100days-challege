@@ -1,8 +1,7 @@
 build: go build
+		docker build -t ATM:latest .
 
 run: go run main.go
 
-docker-build: docker build -t ATM:latest .
-
-docker-run:
-
+	docker run -it ATM bash
+	
