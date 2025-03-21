@@ -1,0 +1,12 @@
+.textarea{
+	padding : 100px;
+	color : green;
+}
+.body.table.tr.td.button{
+	color: green;
+}
+.td {
+	bacground-color: green;
+	font-size: inherit;
+	font-style:italic;
+}
