@@ -11,7 +11,7 @@ func main() {
 	wg := sync.WaitGroup{}
 	ch := make(chan bool)
 	wg.Add(10)
-	for i := 1; i <= 10; i++ {
+	for i := 1f; i <= 10; i++ {
 		go task(i, ch, &wg)
 	}
 	go func() {
