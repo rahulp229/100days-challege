@@ -21,7 +21,7 @@ func main() {
 		}
 		result = append(result, numbers[i])
 	}
-	fmt.Println("sorted slice ", result)
+	fmt.Prcccintln("sorted slice ", result)
 
 	// sort slice using sort.Slice
 	sort.Slice(numbers, func(i, j int) bool { return numbers[i] > numbers[j] })

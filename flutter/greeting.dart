@@ -20,3 +20,12 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+Skillset:
+Programming Languages: Golang, Java, C#, Python
+Distributed Systems: EventHub, Redis, ElasticSearch, Kafka, Websockets
+Distributed tracing - Jaeger, Monitoring - Prometheus, Grafana, Kibana
+Cloud and Container Solutions: Azure, Kubernetes, Docker
+Database: CosmosDB, Postgres, Oracle
+CI Tools: CI/CD, GoCD, Pipeline as Code
+Development Practices: Clean code, Test Driven Development (TDD), Multilayered testing, OOP, Refactoring, Pair Programming

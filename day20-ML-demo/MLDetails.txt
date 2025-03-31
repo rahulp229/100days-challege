@@ -1,0 +1,28 @@
+Machine learning 
+- [ ] ML  is subset of AI 
+- [ ] Focus off building algorithms  and statical models that allow computer to perform specific task without explicit programming.
+- [ ] Instead ML systems learn from data, identify patterns and make predictions or decision based on that data.
+- [ ] There are 3 primary types of ML
+- [ ] 1]Supervised Learning-->
+    - [ ] The mode trained by labeled data 
+    - [ ] That means each training example has both input and expected output(the label)
+    - [ ] Use Case:- Classification (e.g email spam detection ), regression(prediction house price) 
+    - [ ] Examples :- Linear regression, decision trees, neural networks, support vector machine
+- [ ] 2]Unsupervised Learning
+    - [ ] USL involves training data that has no label.
+    - [ ] That Model tries to learn the underlying structure or patterns from the input data alone
+    - [ ] UseCase- Clustering(groupings similar data), anomaly detection, dimensionality reduction 
+    - [ ] Example :- k-means clustering, hierarchical clustering, Principle component Analysis (PCA)
+- [ ] 3]Reinforcement Learning
+    - [ ] Training Data:- In reinforcement learning, an agent learns how to behave in an environment by performing actions and receiving  feedback in the form of rewards or penalties
+    - [ ] The goal is to maximise the cumulative rewards over time
+    - [ ] UseCase: - Robotics, gaming, self-driving cars, recommendation systems.
+    - [ ] Example :- Qlearnings, Deep Q Networks(DQN), Proximal Policy Optimization(PPO).
+    - [ ] Key concepts In ML
+        - [ ] Training data
+        - [ ] Testing data
+        - [ ] Featurs
+        - [ ] Labels
+        - [ ] Overfiting
+        - [ ] Underwriting
+        - [ ] Cross-validation

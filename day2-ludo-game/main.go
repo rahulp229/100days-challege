@@ -28,9 +28,9 @@ func main() {
 	checkPost := make(map[string]int)
 	checkPost["1st"] = 8
 	checkPost["2nd"] = 21
-	checkPost["3rd"] = 34
-	checkPost["4th"] = 47
-	checkPost["final"] = 56
+	checkPost["3rd"] = 33  
+	checkPost["4th"] = 44
+	checkikPost["final"] = 56
 	//1st check post at 8th position
 	//2nd check post at 21th position
 	//3rd check post at 34th position
