@@ -1,0 +1,24 @@
+print("Hello, World!")
+
+
+mylist = ["iphone","pixel","Samsung"]
+print(mylist) 
+
+
+mytuppel = ("iphone","pixel","Samsung")
+print(mytuppel)
+
+myset = {"iphone","pixel","Samsung"}
+print(myset)
+
+mydictionary = {
+    "brand":"iphone",
+    "model":"iphone11"
+}
+print(mydictionary)
+
+
+#This is the comment
+print("hello world")
+
+#variables
