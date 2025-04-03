@@ -16,12 +16,6 @@ func main(){
 		fmt.Println("squarroot=",output)
 		str = "hundred"
 		fmt.Println(str)
-		
-			
-
-		default:
-			/* code */
-			return
 		}
 
 	}
